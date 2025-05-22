@@ -31,6 +31,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: script
-        run: chmod +x ./lash.sh
-             ./lash.sh
+        run: ./lash.sh
+             
           
