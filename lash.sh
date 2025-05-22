@@ -24,41 +24,5 @@ echo "7. git pull        - Fetch and merge changes from the remote repository"
 echo "8. git branch      - List, create, or delete branches"
 echo "9. git checkout BRANCH - Switch to another branch"
 echo "10. git log        - Show commit logs"
-
-case "$command" in
-    "git init")
-        echo "git init - Initialize a new git repository"
-        ;;
-    "git clone"*)
-        echo "git clone URL - Clone a repository from a remote URL"
-        ;;
-    "git status")
-        echo "git status - Show the working tree status"
-        ;;
-    "git add"*)
-        echo "git add FILE - Add file(s) to the staging area"
-        ;;
-    "git commit"*)
-        echo "git commit -m 'msg' - Commit staged changes with a message"
-        ;;
-    "git push")
-        echo "git push - Push local commits to the remote repository"
-        ;;
-    "git pull")
-        echo "git pull - Fetch and merge changes from the remote repository"
-        ;;
-    "git branch"*)
-        echo "git branch - List, create, or delete branches"
-        ;;
-    "git checkout"*)
-        echo "git checkout BRANCH - Switch to another branch"
-        ;;
-    "git log")
-        echo "git log - Show commit logs"
-        ;;
-    *)
-        echo "Sorry, I don't recognize that git command."
-        ;;
-esac
-echo "Thank you for using this script!"
+echo " thank you for using this script!"
 
