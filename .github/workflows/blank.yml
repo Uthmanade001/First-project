@@ -33,6 +33,12 @@ jobs:
       - name: Run a multi-line script
         run: echo Add other actions to build,
             echo test, and deploy your project.
+
+      - name: Make script executable
+        run: chmod +x ./lash.sh
+
+      - name: Run Bash Script
+        run: ./lash.sh
              
              
           
