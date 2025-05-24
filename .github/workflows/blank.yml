@@ -35,10 +35,10 @@ jobs:
             echo test, and deploy your project.
 
       - name: Make script executable
-        run: chmod +x ./lash.sh
+        run: chmod +x ./run-tests.sh
 
-      - name: Run Bash Script
-        run: ./lash.sh
+      - name: Run fake unit tests
+        run: ./run-tests.sh
              
              
           
