@@ -37,8 +37,8 @@ jobs:
       - name: Make script executable
         run: chmod +x ./run-tests.sh
 
-      - name: Run fake unit tests
-        run: ./run-tests.sh
+      - name: Run backup script
+        run: ./backup.sh
              
              
           
