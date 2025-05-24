@@ -35,7 +35,7 @@ jobs:
             echo test, and deploy your project.
 
       - name: Make script executable
-        run: chmod +x ./run-tests.sh
+        run: chmod +x ./backup.sh
 
       - name: Run backup script
         run: ./backup.sh
