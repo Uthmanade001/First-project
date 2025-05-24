@@ -1,7 +1,8 @@
 #!/bin/bash
 
-echo "🧪 Real Check: Does config.yml exist?"
+echo "🧪 Starting full pre-deployment file checks..."
 
+# Check config.yml
 if [ -f config.yml ]; then
   echo "✅ config.yml is present"
 else
@@ -9,4 +10,13 @@ else
   exit 1
 fi
 
-echo "✅ All checks passed."
+# Check .env
+if [ -f .env ]; then
+  echo "✅ .env file is present"
+else
+  echo "❌ .env file is missing"
+  exit 1
+fi
+
+echo "✅ All critical files found. Ready to deploy!"
+
