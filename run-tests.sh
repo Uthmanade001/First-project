@@ -20,4 +20,4 @@ else
   exit 1
 fi
 
-echo "✅ All tests passed!"
+echo "✅ All tests passeed"
