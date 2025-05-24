@@ -1,22 +1,22 @@
 #!/bin/bash
 
-echo "🧪 Starting full pre-deployment file checks..."
+echo "🧪 Checking if the scripts/ folder exists..."
 
-# Check config.yml
-if [ -f config.yml ]; then
-  echo "✅ config.yml is present"
+if [ -d scripts ]; then
+  echo "✅ scripts/ folder exists"
+
+  echo "🔍 Checking if scripts/ is empty..."
+  if [ "$(ls -A scripts)" ]; then
+    echo "✅ scripts/ is NOT empty"
+  else
+    echo "❌ scripts/ is empty"
+    exit 1
+  fi
 else
-  echo "❌ config.yml is missing"
+  echo "❌ scripts/ folder does not exist"
   exit 1
 fi
 
-# Check .env
-if [ -f .env ]; then
-  echo "✅ .env file is present"
-else
-  echo "❌ .env file is missing"
-  exit 1
-fi
+echo "✅ Folder check passed"
 
-echo "✅ All critical files found. Ready to deploy!"
 
