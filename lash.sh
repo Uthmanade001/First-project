@@ -25,4 +25,4 @@ echo "8. git branch      - List, create, or delete branches"
 echo "9. git checkout BRANCH - Switch to another branch"
 echo "10. git log        - Show commit logs"
 echo " thank you for using this script!"
-
+thiscommanddoesnotexist
