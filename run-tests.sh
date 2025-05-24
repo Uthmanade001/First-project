@@ -14,7 +14,7 @@ fi
 # Simulated test 2 (fail on purpose)
 echo "Test 2: Checking if 5 - 3 == 1"
 if [ $((5 - 3)) -eq 2 ]; then
-  echo "✅ Test 2 passed"
+  echo "✅ Test 2 passed successfully"
 else
   echo "❌ Test 2 failed"
   exit 1
