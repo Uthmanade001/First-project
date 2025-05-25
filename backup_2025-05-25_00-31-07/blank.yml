@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: backup and upload
+name: CI
 
 # Controls when the workflow will run
 on:
@@ -34,17 +34,11 @@ jobs:
         run: echo Add other actions to build,
             echo test, and deploy your project.
 
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Make script executable
-        run: chmod +x ./backup.sh
+        run: chmod +x ./run-tests.sh
 
-      - name: Run backup script
-        run: ./backup.sh
-
-        with:
-          name: backup-files
-          path: backup_*.zip   
-        
+      - name: Run fake unit tests
+        run: ./run-tests.sh
+             
+             
           
