@@ -34,15 +34,14 @@ jobs:
         run: echo Add other actions to build,
             echo test, and deploy your project.
 
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Make script executable
         run: chmod +x ./backup.sh
 
       - name: Run backup script
         run: ./backup.sh
-
+        
+      - name: 📦 Upload Backup Zip
+        uses: actions/upload-artifact@v3
         with:
           name: backup-files
           path: backup_*.zip   
