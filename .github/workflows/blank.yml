@@ -33,9 +33,9 @@ jobs:
       - name: Run a multi-line script
         run: echo Add other actions to build,
             echo test, and deploy your project.
-            
+
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Make script executable
         run: chmod +x ./backup.sh
