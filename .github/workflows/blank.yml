@@ -40,5 +40,9 @@ jobs:
       - name: Run backup script
         run: ./backup.sh
              
-             
+      - name: 📦 Upload Backup Zip
+        uses: actions/upload-artifact@v3
+        with:
+          name: backup-files
+          path: backup_*.zip      
           
