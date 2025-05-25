@@ -2,14 +2,18 @@
 
 echo "🔄 Starting backup process..."
 
-# Create backup directory with current date/time
+# Create timestamped backup folder
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
 backup_dir="backup_$timestamp"
-
 mkdir "$backup_dir"
 
-# Copy all .sh and .yml files into it
+# Copy files to backup folder
 cp *.sh "$backup_dir" 2>/dev/null
 cp .github/workflows/*.yml "$backup_dir" 2>/dev/null
 
-echo "✅ Backup completed. Files saved to: $backup_dir"
+# Zip the backup folder
+zip -r "${backup_dir}.zip" "$backup_dir"
+
+echo "✅ Backup completed and zipped:"
+echo "📦 ${backup_dir}.zip"
+
