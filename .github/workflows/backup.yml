@@ -19,4 +19,15 @@ jobs:
       - name: Run Deploy Script
         run: ./deploy.sh
 
+      - name: List contents of dist
+        run: ls -l dist/
+
+      - name: Upload Dist Folder
+        uses: actions/upload-artifact@v3.1.3
+        with:
+          name: deployed-files
+          path: dist/
+
+
+
     
