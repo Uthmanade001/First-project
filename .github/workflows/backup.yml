@@ -16,5 +16,5 @@ jobs:
       - name: Make script executable
         run: chmod +x ./deploy.sh
 
-      - name: Run backup script
+      - name: simulate deployment
         run: ./deploy.sh
