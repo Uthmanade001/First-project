@@ -23,7 +23,7 @@ jobs:
         run: ls -l dist/
 
       - name: Upload Dist Folder
-        uses: actions/upload-artifact@v3@1e953d8c4e7a347cd53ab56f536cf87b0c06292a
+        uses: actions/upload-artifact@1e953d8c4e7a347cd53ab56f536cf87b0c06292a
 
         with:
           name: deployed-files
