@@ -22,5 +22,5 @@ jobs:
       - name: Upload Dist Folder
         uses: actions/upload-artifact@v3.1.3
         with:
-        name: deployed-files
+          name: deployed-files
           path: dist/
