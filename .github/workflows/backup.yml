@@ -1,4 +1,4 @@
-name: backup and upload
+name: CI
 
 on:
   push:
